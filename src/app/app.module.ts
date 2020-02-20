@@ -9,7 +9,10 @@ import { HomeComponent } from './component/home/home.component';
 import { TechnicalInformationComponent } from './component/technical-information/technical-information.component';
 import { LoginComponent } from './component/login/login.component';
 import { FormsModule } from '@angular/forms';
-import { ButtonsModule } from 'ngx-bootstrap/buttons'
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { ApplicantHomeComponent } from './component/applicant/applicant-home/applicant-home.component';
+import { AgentHomeComponent } from './component/agent/agent-home/agent-home.component';
+import { SuperAgentHomeComponent } from './component/super-agent/super-agent-home/super-agent-home.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons'
     FooterComponent,
     HomeComponent,
     TechnicalInformationComponent,
-    LoginComponent
+    LoginComponent,
+    ApplicantHomeComponent,
+    AgentHomeComponent,
+    SuperAgentHomeComponent
   ],
   imports: [
     BrowserModule,
