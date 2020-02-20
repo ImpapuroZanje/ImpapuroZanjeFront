@@ -1,1 +1,17 @@
-<p>login works!</p>
+<br><br>
+<form #form="ngForm" class="myForms mx-auto">
+    <div class="form-group">
+        <input type="email" name="email" class="form-control" placeholder="Mail" ngModel>
+    </div>
+    <div class="form-group">
+        <input type="password" name="password" class="form-control" placeholder="Password" ngModel>
+    </div>
+    <div class="text-center">
+        <div class="btn-group">
+            <label class="btn btn-primary" btnCheckbox tabindex="0" role="button" (click)="logIn()">Submit</label>
+            <label class="btn btn-outline-success" btnCheckbox tabindex="0" role="button" routerLink="/home">Home</label>
+        </div>
+    </div>
+</form>
+
+{{ form.value | json }}
